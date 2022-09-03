@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Product Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <header id = logo>
+        <img src = "../logo/logo-01.svg" width = "200" alt = "logo">
+    </header>
+    <nav>
+        <a href="index.html"> PRODUCTS </a> 
+        <br>
+        <a href="#"> CART </a> 
+    </nav>
+    <section class = "prduct-list">
+        <h1 id = "product-title"> Original Cinnamon Roll </h1>
+        <img id = "product-image" src="../products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon Roll"/>
+        <h2 id = "customization-info"> Customize our delicious hand-made cinnamon roll to your liking </h2>
+        <div id = "customization-glazing">
+            <label for="glazing"> Glazing</label><br/>
+            <select id="glazing">
+                <option value="keep-original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+            </select>
+        </div>
+        <div id = "customization-pack-size">
+            <label for="pack-size">Pack Size</label><br/>
+            <select id="pack-size">
+                <option value="one">1</option>
+                <option value="three">3</option>
+                <option value="six">6</option>
+                <option value="twelve">12</option>
+            </select>
+        </div>
+        <div id = "cart">
+            <h4 id = "price-total">2.49</h4>
+            <h4 id = "cart-button">Add to Cart</h4>   
+        </div>
+    </section>
+  </body>
