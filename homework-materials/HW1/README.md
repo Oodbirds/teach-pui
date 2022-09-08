@@ -1,3 +1,5 @@
+Homework 1, Please view the following link
+https://oodbirds.github.io/teach-pui
 # HW1 Materials
 
 Find the materials for your homework here:
