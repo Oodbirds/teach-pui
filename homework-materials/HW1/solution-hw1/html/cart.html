@@ -3,40 +3,46 @@
 
   <head>
     <title>Product Gallery</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
 
   <body>
-    <header id = logo>
-        <img src = "../logo/logo-01.svg" width = "200" alt = "logo">
+    <header>
+        <a href = "index.html">
+            <img src = "../logo/logo-01.svg" width = "200" alt = "logo">
+        </a>
     </header>
+    <hr>
     <nav>
         <a href="index.html"> PRODUCTS </a> 
         <br>
-        <a href="#"> CART </a> 
+        <a class = "current-page" href="cart.html"> CART </a> 
     </nav>
 
-    <section id = "prduct-list">
+    <section class= "prduct-list">
         <h1>Our hand-made cinnamon rolls</h1>
-        <div id = "product-incart">
-            <img id = "product-image" src="../products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon Roll"/>
-            <h5 id = "remove">remove</h5>
-            <div id = "description-incart">
-                <h5 id = "description-incart">Original Cinnamon Roll</h5>
-                <h5 id = "description-incart">Glazing: Keep Original</h5>
-                <h5 id = "description-incart">Pack Size: 1</h5>
-                <h5 id = "description-incart">$2.49</h5>
+        <div>
+            <img class = "product-image" src="../products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon Roll"/>
+            <h5 class = "remove">remove</h5>
+            <div class = "incart">
+                <p>Original Cinnamon Roll</p>
+                <p>Glazing: Keep Original</p>
+                <p> Pack Size: 1</p>
             </div>
+            <p class = "price">$2.49</p>
         </div>
-        <div id = "product-incart">
-            <img id = "product-image" src="../products/apple-cinnamon-roll.jpg" width="200" alt="apple cinnamon Roll"/>
-            <h5 id = "remove">remove</h5>
-            <div id = "description-incart">
-                <h5 id = "description-incart">Apple Cinnamon Roll</h5>
-                <h5 id = "description-incart">Glazing: Keep Original</h5>
-                <h5 id = "description-incart">Pack Size: 1</h5>
-                <h5 id = "description-incart">$2.49</h5>
+        <div>
+            <img class = "product-image" src="../products/apple-cinnamon-roll.jpg" width="200" alt="apple cinnamon Roll"/>
+            <h5 class= "remove">remove</h5>
+            <div class = "incart">
+                <p >Double Chocolate Cinnamon Roll</p>
+                <p>Glazing: Sugar milk</p>
+                <p >Pack Size: 6</p>
             </div>
+            <p class = "price">$27.45</p>
         </div>
+        <hr class = "checkout">
+        <h4>Total: 29.94</h4>
+        <h4 class = "button">checkout</h4> 
     </section>
   </body>
