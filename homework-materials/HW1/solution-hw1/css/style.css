@@ -11,7 +11,6 @@ nav{
     background-color: yellow;
 }
 .prduct-list{
-    width: 100;
     margin-top: 50px;
     text-align: center;
 }
@@ -62,7 +61,6 @@ hr{
 }
 .total-calc {
     margin: auto;
-    margin-top: 20ppx;
     text-align: center;
   }
 .total-calc h4 {
@@ -77,7 +75,6 @@ hr{
     margin : auto;
   }
   .incart{
-    font-weight: 900px;
     text-align: center;
     margin-top: 20px;
     font-size: 13px;
