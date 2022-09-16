@@ -7,23 +7,27 @@
   </head>
 
   <body>
-    <header>
-        <a href = "index.html">
-            <img src = "../logo/logo-01.svg" width = "200" alt = "logo">
-        </a>
+    <header >
+        <a id = "logo" href = "index.html">
+        <img src = "../logo/logo-01.svg" width = "200" alt = "logo">
+        </a>    
+        <div class = "title">
+            <nav>
+                <a class = "current-page" href="index.html"> PRODUCTS </a> 
+                <br>
+                <a href="cart.html"> CART </a> 
+            </nav>
+            <hr>
+            <h3 id="page-title" >Shopping Cart</h3>
+        </div>
     </header>
-    <hr>
-    <nav>
-        <a href="index.html"> PRODUCTS </a> 
-        <br>
-        <a class = "current-page" href="cart.html"> CART </a> 
-    </nav>
 
-    <section class= "prduct-list">
-        <h1>Shopping Cart</h1>
-        <div>
-            <img class = "product-image" src="../products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon Roll"/>
-            <h5 class = "remove">remove</h5>
+    <section class= "prduct-incart">
+        <div class = "product-checkout">
+            <div class = "image-remove">
+                <img class = "product-image" src="../products/original-cinnamon-roll.jpg" width="150" alt="Original cinnamon Roll"/>
+                <h5 class = "remove">remove</h5>
+            </div>
             <div class = "incart">
                 <p>Original Cinnamon Roll</p>
                 <p>Glazing: Keep Original</p>
@@ -31,18 +35,23 @@
             </div>
             <p class = "price">$2.49</p>
         </div>
-        <div>
-            <img class = "product-image" src="../products/apple-cinnamon-roll.jpg" width="200" alt="apple cinnamon Roll"/>
-            <h5 class= "remove">remove</h5>
-            <div class = "incart">
-                <p >Double Chocolate Cinnamon Roll</p>
-                <p>Glazing: Sugar milk</p>
-                <p >Pack Size: 6</p>
+        <div class = "product-checkout">
+            <div class = "image-remove">
+                <img class = "product-image" src="../products/original-cinnamon-roll.jpg" width="150" alt="Original cinnamon Roll"/>
+                <h5 class = "remove">remove</h5>
             </div>
-            <p class = "price">$27.45</p>
+            <div class = "incart">
+                <p>Original Cinnamon Roll</p>
+                <p>Glazing: Keep Original</p>
+                <p> Pack Size: 1</p>
+            </div>
+            <p class = "price">$2.49</p>
         </div>
-        <hr class = "checkout">
-        <h4>Total: 29.94</h4>
-        <h4 class = "button">checkout</h4> 
+            <hr class = "checkout">
+            <div class = "total">
+                <h4 class = "price" id = "price-total">Total: </h4>
+                <h4 class = "price" id = "price-number">29.94</h4>
+            </div>
+        <h4 class = "button" id = "checkout-button">checkout</h4> 
     </section>
   </body>
