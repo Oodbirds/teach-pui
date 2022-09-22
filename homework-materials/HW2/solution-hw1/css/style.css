@@ -45,6 +45,7 @@ nav{
 .product-info{
     display: flex;
     flex-wrap:wrap;
+    align-items: flex-end;
     column-gap: 50px;
 }
 .product-info img{
