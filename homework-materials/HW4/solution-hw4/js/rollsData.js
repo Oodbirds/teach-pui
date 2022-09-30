@@ -1,3 +1,4 @@
+//variable decleration
 let cart = [];
 let header = "Cinnamon Roll";
 let productPrice = 0.00;
@@ -6,6 +7,8 @@ let productImg = "";
 let headerVal = document.getElementById("page-title");
 let imgVal = document.getElementById("big-display");
 let priceVal = document.getElementById("total-price");
+
+//classes and dictionaries
 const rolls = {
     "Original": {
         "basePrice": 2.49,
@@ -42,17 +45,15 @@ class Roll {
     }
 }
 
+//load dictionary values
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
 
-console.log("roll type "+ rollType);
-console.log("price variable test" + priceContent);
-console.log("current glaze and pack" + currentGlazeName + " " + currentPackName)
-
 extractDetail(rollType);
 setDetails();
 
+//extracts deatils from dictionary using key
 function extractDetail(rollType){
     header = rollType + " Cinnamon Roll";
     console.log(header);
@@ -62,6 +63,7 @@ function extractDetail(rollType){
     console.log(productImg);
 }
 
+//assigns extracted details to values.
 function setDetails(){
     headerVal.textContent = header;
     console.log(headerVal.textContent);
@@ -71,10 +73,12 @@ function setDetails(){
     priceContent = productPrice;
 }
 
+//button click listener. Calls fujnction to add current item to cart
 document.getElementById("add-cart").onclick = function() {
-    console.log("button was clicked");
     addToCart();
 }
+
+//adds item to csrt array and prints out values
  function addToCart(){
     let newRollName = new Roll(rollType, currentGlazeName, currentPackName, productPrice);
     cart.push(newRollName);
